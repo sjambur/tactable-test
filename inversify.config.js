@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.container = void 0;
+var inversify_1 = require("inversify");
+var api_manager_1 = require("./src/api-manager");
+var todo_client_1 = require("./src/todo-client");
+var container = new inversify_1.Container();
+exports.container = container;
+container.bind("Client").to(todo_client_1.TodoClient);
+container.bind("ApiManager").to(api_manager_1.ApiManager);

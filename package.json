@@ -1,0 +1,29 @@
+{
+  "name": "tactable-test",
+  "version": "1.0.0",
+  "description": "tactable test",
+  "main": "./src/run.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "inversify": "^5.1.1",
+    "jest-fetch-mock": "^3.0.3",
+    "node-fetch": "^2.6.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node-fetch": "^2.5.11",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "start": "node ./src/run.js",
+    "test": "jest"
+  },
+  "author": "Sachin Jambur",
+  "license": "ISC"
+}
